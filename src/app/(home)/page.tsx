@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import SocialLinks from '@/components/social-links'
+
 export default function Home() {
 	return (
 		<main className="max-w-[600px] space-y-5">
@@ -60,6 +62,8 @@ export default function Home() {
 					creative solutions to solve problems effectively.
 				</p>
 			</div>
+
+			<SocialLinks />
 		</main>
 	)
 }
