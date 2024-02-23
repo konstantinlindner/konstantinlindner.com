@@ -9,7 +9,7 @@
 		"^react$",
 		"^next",
 		"^@/hooks/(.*)$",
-		"^@/utils/(.*)$",
+		"^@/lib/(.*)$",
 		"<THIRD_PARTY_MODULES>",
 		"^lucide-react$",
 		"^@/components/(.*)$",
