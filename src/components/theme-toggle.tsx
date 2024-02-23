@@ -1,7 +1,5 @@
 'use client'
 
-import * as React from 'react'
-
 import { useTheme } from 'next-themes'
 
 import { Moon, SunMedium } from 'lucide-react'
@@ -11,12 +9,12 @@ import { Button } from '@/components/ui/button'
 export default function ThemeToggle() {
 	const { setTheme, resolvedTheme } = useTheme()
 
-	const isDarkTheme = resolvedTheme === 'dark'
-
 	return (
 		<Button
 			className="size-9 rounded-full"
-			onClick={() => setTheme(isDarkTheme ? 'light' : 'dark')}
+			onClick={() =>
+				setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+			}
 			variant="ghost"
 			size="sm"
 		>
