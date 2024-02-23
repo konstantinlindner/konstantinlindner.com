@@ -21,12 +21,16 @@ const navbarItems = [
 		href: '/about',
 		activeRoute: 'about',
 	},
-	{
-		title: 'Contact',
-		href: '/contact',
-		activeRoute: 'contact',
-	},
 ]
+
+export type NavbarProps = {
+	items: {
+		title: string
+		href: string
+		activeRoute: string
+	}[]
+	currentPage: string | null
+}
 
 export default function Navbar() {
 	const currentPage = useSelectedLayoutSegment()
