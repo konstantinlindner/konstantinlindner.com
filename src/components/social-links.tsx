@@ -50,7 +50,7 @@ export default function SocialLinks() {
 					asChild
 					variant="secondary"
 					size="icon"
-					className="rounded-full"
+					className="size-9 rounded-full"
 				>
 					<a href={item.url}>
 						<item.icon className="size-5" />
