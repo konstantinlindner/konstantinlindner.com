@@ -6,6 +6,7 @@ export default function Home() {
 	return (
 		<main className="max-w-[600px] space-y-5">
 			<Image
+				priority
 				src="/images/profile.webp"
 				height="150"
 				width="150"
