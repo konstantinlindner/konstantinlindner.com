@@ -8,7 +8,7 @@ export default function Home() {
 				height="150"
 				width="150"
 				alt="Konstantin Lindner"
-				className="float-right rounded-full pb-3 pl-3"
+				className="mx-auto rounded-full sm:float-right sm:mb-3 sm:ml-3"
 			/>
 
 			<div className="flex flex-col gap-1">
@@ -28,7 +28,7 @@ export default function Home() {
 				</h2>
 			</div>
 
-			<div className="space-y-2">
+			<div className="space-y-4">
 				<p>
 					A full-stack developer with a passion for crafting
 					exceptional digital experiences. My journey in the vast
