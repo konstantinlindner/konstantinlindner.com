@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import DinosaurPixel from '@/components/dinosaur-pixel'
+import DinosaurPixel from '@/components/assets/dinosaur-pixel'
 import { Button } from '@/components/ui/button'
 
 export const metadata = {
