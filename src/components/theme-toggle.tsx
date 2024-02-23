@@ -11,12 +11,12 @@ export default function ThemeToggle() {
 
 	return (
 		<Button
-			className="size-9 rounded-full"
 			onClick={() =>
 				setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
 			}
 			variant="ghost"
-			size="sm"
+			size="icon"
+			className="size-9 rounded-full"
 		>
 			<SunMedium className="absolute size-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
 			<Moon className="absolute size-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
