@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function NotFound() {
 	return (
-		<main className="flex flex-1 flex-col items-center gap-10 pt-20 text-center">
+		<main className="flex flex-1 flex-col items-center gap-10 px-5 pt-20 text-center">
 			<div className="flex flex-col items-center gap-3">
 				<DinosaurPixel className="size-48" />
 				<h1 className="text-4xl font-semibold tracking-tighter">
