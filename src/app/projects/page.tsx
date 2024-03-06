@@ -12,6 +12,7 @@ const professionalProjects = [
 			'Typescript',
 			'React Native',
 			'Emotion/styled',
+			'MobX',
 			'Firebase',
 			'PHP',
 			'Laravel',
@@ -106,6 +107,7 @@ const personalProjects = [
 		technology: [
 			'Typescript',
 			'React Native',
+			'Expo',
 			'Supabase',
 			'Zod',
 			'React Hook Form',
