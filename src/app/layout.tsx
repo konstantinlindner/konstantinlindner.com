@@ -48,7 +48,6 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'Konstantin Lindner',
 		description: 'Portfolio of Konstantin Lindner, a software engineer.',
-		// TODO add og image
 		images: '/og.png',
 		creator: '@konstantin_app',
 	},
