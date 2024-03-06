@@ -52,7 +52,7 @@ export default function SocialLinks() {
 					size="icon"
 					className="size-9 rounded-full"
 				>
-					<a href={item.url}>
+					<a href={item.url} aria-label={item.name}>
 						<item.icon className="size-5" />
 					</a>
 				</Button>
