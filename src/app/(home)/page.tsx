@@ -4,7 +4,7 @@ import SocialLinks from '@/components/social-links'
 
 export default function Home() {
 	return (
-		<main className="max-w-[600px] space-y-5 px-5 sm:px-0">
+		<main className="mx-auto max-w-[600px] space-y-5 px-5 sm:px-0">
 			<Image
 				priority
 				src="/images/profile.webp"
