@@ -133,7 +133,7 @@ export default function About() {
 
 			<div className="space-y-10">
 				<div className="space-y-7">
-					<h2 className="text-orange text-3xl font-semibold tracking-tighter">
+					<h2 className="text-3xl font-semibold tracking-tighter text-orange">
 						I am
 					</h2>
 					<section className="space-y-4">
@@ -175,7 +175,7 @@ export default function About() {
 				</div>
 
 				<div className="space-y-5">
-					<h2 className="text-orange text-3xl font-semibold tracking-tighter">
+					<h2 className="text-3xl font-semibold tracking-tighter text-orange">
 						Selected work experience
 					</h2>
 					<section className="space-y-7">
@@ -186,7 +186,7 @@ export default function About() {
 				</div>
 
 				<div className="space-y-5">
-					<h2 className="text-orange text-3xl font-semibold tracking-tighter">
+					<h2 className="text-3xl font-semibold tracking-tighter text-orange">
 						Education
 					</h2>
 					<section className="space-y-7">
@@ -197,7 +197,7 @@ export default function About() {
 				</div>
 
 				<div className="space-y-5">
-					<h2 className="text-orange text-3xl font-semibold tracking-tighter">
+					<h2 className="text-3xl font-semibold tracking-tighter text-orange">
 						Certifications and awards
 					</h2>
 					<section className="space-y-7">
@@ -208,7 +208,7 @@ export default function About() {
 				</div>
 
 				<div className="space-y-5">
-					<h2 className="text-orange text-3xl font-semibold tracking-tighter">
+					<h2 className="text-3xl font-semibold tracking-tighter text-orange">
 						Language skills
 					</h2>
 					<section className="flex flex-col gap-2">
