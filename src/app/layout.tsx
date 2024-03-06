@@ -4,10 +4,10 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
+
 import '@/styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { Toaster } from 'sonner'
 
 import Navbar from '@/components/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
@@ -85,12 +85,11 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<Navbar />
-					<main className="flex flex-1 flex-col">
+					<div className="flex flex-1 flex-col pb-10">
 						{children}
 						<Analytics />
 						<SpeedInsights />
-						<Toaster />
-					</main>
+					</div>
 				</ThemeProvider>
 			</body>
 		</html>
