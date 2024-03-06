@@ -4,6 +4,10 @@ import SocialLinks from '@/components/social-links'
 
 import ExperienceItem from './components/experience-item'
 
+export const metadata = {
+	title: 'About',
+}
+
 const workItems = [
 	{
 		header: 'Freelancing',
