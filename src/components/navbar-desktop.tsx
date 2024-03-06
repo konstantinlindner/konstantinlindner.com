@@ -3,13 +3,12 @@ import Link from 'next/link'
 import { cn } from '@/lib/utils'
 
 import { NavbarProps } from '@/components/navbar'
-
-import ThemeToggle from './theme-toggle'
-import { Button } from './ui/button'
+import ThemeToggle from '@/components/theme-toggle'
+import { Button } from '@/components/ui/button'
 
 export default function NavbarDesktop({ items, currentPage }: NavbarProps) {
 	return (
-		<header className="flex h-20 w-[600px] items-center justify-between">
+		<header className="mx-auto flex h-20 w-[600px] items-center justify-between">
 			<nav className="-ml-3 flex gap-1">
 				{items.map((item, index) => (
 					<Button
