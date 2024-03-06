@@ -43,7 +43,7 @@ const socialLinks = [
 
 export default function SocialLinks() {
 	return (
-		<div className="flex gap-3">
+		<div className="flex justify-center gap-3 sm:justify-start">
 			{socialLinks.map((item, index) => (
 				<Button
 					key={index}

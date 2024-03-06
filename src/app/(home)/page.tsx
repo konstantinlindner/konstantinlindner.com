@@ -14,7 +14,7 @@ export default function Home() {
 				className="mx-auto rounded-full sm:float-right sm:mb-3 sm:ml-3"
 			/>
 
-			<div className="flex flex-col gap-1">
+			<div className="flex flex-col gap-1 text-center sm:text-left">
 				<h1 className="text-4xl font-semibold tracking-tighter">
 					Konstantin Lindner
 				</h1>
