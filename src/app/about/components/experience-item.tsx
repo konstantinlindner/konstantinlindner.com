@@ -16,7 +16,7 @@ export default function ExperienceItem({
 	text3,
 }: ExperienceItemProps) {
 	return (
-		<div className="space-y-5">
+		<div className="space-y-5 border-b pb-7">
 			<div>
 				<h3 className="text-lg font-bold">{header}</h3>
 				<h4 className="text-lg italic">{description}</h4>
