@@ -8,98 +8,143 @@ const professionalProjects = [
 	{
 		title: 'fit52',
 		description: 'A fitness app from Carrie Underwood',
-		image: '/images/projects/fit52.jpg',
-		shortContent: 'Building the best fitness app to workout from home.',
-		longContent:
-			"As a QA Engineer on fit52, I've had the opportunity to play a significant role in the development of the app. Responsible for reviewing and approving all code changes of both front-end and back-end, utilizing manual testing as well as advanced tools such as Detox and Maestro for automated tests.",
+		technology: [
+			'Typescript',
+			'React Native',
+			'Emotion/styled',
+			'Firebase',
+			'PHP',
+			'Laravel',
+			'MySQL',
+		],
+		backText:
+			"As both a Software and QA Engineer on fit52, I've had the opportunity to play a significant role in the development of the app. During my time as QA, I was responsible for reviewing and approving all code changes of both front-end and back-end, utilizing manual testing as well as advanced tools such as Detox and Maestro for automated tests.",
 		websiteUrl: 'https://www.fit52.com/',
+		image: '/images/projects/fit52.jpg',
 	},
 	{
 		title: 'Hanx101',
 		description: 'A trivia game by Tom Hanks',
-		image: '/images/projects/hanx101.jpg',
-		shortContent:
-			'Created a content management system for trivia questions.',
-		longContent:
+		technology: ['Typescript', 'React', 'MUI', 'Firebase', 'MySQL'],
+		backText:
 			'Being tasked with rapidly creating a content management tool for the popular trivia game we decided on a stack of React with MUI for development speed. Although my role was QA, I actively contributed to the project by writing code as well.',
 		websiteUrl: 'https://www.hanx101.com/',
+		image: '/images/projects/hanx101.jpg',
 	},
 	{
 		title: 'Tillse',
-		description: 'A SaaS for the real estate industry',
-		image: '/images/projects/tillse.png',
-		shortContent: 'Designed and built a landing page for Tillse.',
-		longContent:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+		description: 'Landing page for a SaaS in the real estate industry',
+		technology: [
+			'Typescript',
+			'React',
+			'Next.js',
+			'Zod',
+			'React Hook Form',
+			'Resend',
+			'Embla Carousel',
+		],
+		backText: 'Designed and built a landing page for tillse.se.',
 		websiteUrl: 'https://tillse.se/',
+		image: '/images/projects/tillse.png',
 	},
 	{
 		title: 'AI Projects',
 		description: 'R&D projects in the field of AI',
-		image: '/images/projects/ai.png',
-		shortContent:
+		technology: [
+			'Typescript',
+			'React',
+			'GPT-4',
+			'Pinecone',
+			'Firebase',
+			'Chrome Extension',
+		],
+		backText:
 			'A browser extension for shopping and a chatbot for ecommerce websites.',
-		longContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		image: '/images/projects/ai.jpg',
 	},
 	{
 		title: 'Email signature generator',
 		description: 'A custom tool for a company group',
+		technology: ['Typescript', 'React', 'Chakra UI', 'Papaparse', 'Vite'],
+		backText: 'Lets employees create and manage their email signature.',
 		image: '/images/projects/email-signature-generator.png',
-		shortContent: 'Short content of project 4',
-		longContent: 'Long content of project 4',
 	},
 	{
 		title: 'Puppeteer scraper',
-		description:
-			'Helping a company gather publically available data for sales',
+		description: 'Helping a company gather data',
+		technology: ['Typescript', 'Puppeteer', 'Node.js'],
+		backText: 'Custom web scraping script for the real estate industry.',
 		image: '/images/projects/scraper.png',
-		shortContent: 'Short content of project 5',
-		longContent: 'Long content of project 5',
 	},
 ]
 
 const personalProjects = [
 	{
-		title: 'Portfolio',
-		description: 'The very website you are browsing',
-		image: '/images/projects/portfolio.jpg',
-		shortContent: 'Short content of project 1',
-		longContent: 'Long content of project 1',
-		githubUrl: 'https://github.com/konstantinlindner/konstantinlindner.com',
+		title: 'Lifelytics',
+		description:
+			'A tool to track spending and control your personal finances',
+		technology: [
+			'Typescript',
+			'React',
+			'Next.js',
+			'TailwindCSS',
+			'shadcn/ui',
+			'Zod',
+			'AWS',
+			'Framer Motion',
+			'Supabase',
+		],
+		backText:
+			'Track and visualize your personal finances, health and life stats.',
+		websiteUrl: 'https://life.konstantin.app/',
+		githubUrl: 'https://github.com/konstantinlindner/lifelytics',
+		image: '/images/projects/lifelytics.png',
+	},
+	{
+		title: 'Picky Eater',
+		description: 'A recipe app for picky eaters',
+		technology: [
+			'Typescript',
+			'React Native',
+			'Supabase',
+			'Zod',
+			'React Hook Form',
+		],
+		backText:
+			'Custom recipes and inspiration for those with sensitive taste buds.',
+		githubUrl: 'https://github.com/konstantinlindner/picky-eater',
+		image: '/images/projects/picky-eater.png',
 	},
 	{
 		title: 'konstantin.bio',
 		description: 'A personal link in bio website',
-		image: '/images/projects/konstantin-bio.jpg',
-		shortContent: 'Short content of project 2',
-		longContent: 'Long content of project 2',
+		technology: ['Typescript', 'React', 'Chakra UI', 'Vite'],
+		backText: 'So that I can say "Link in bio 👇".',
 		websiteUrl: 'https://konstantin.bio',
 		githubUrl: 'https://github.com/konstantinlindner/konstantin.bio',
+		image: '/images/projects/konstantin-bio.png',
 	},
 	{
-		title: 'Lifelytics',
-		description:
-			'A tool to track spending and control your personal finances',
-		image: '/images/projects/lifelytics.png',
-		shortContent:
-			'A base for your productivity and well-being. Track and visualize your personal finances, health and life stats in one tool.',
-		longContent: 'Long content of project 4',
-		websiteUrl: 'https://life.konstantin.app/',
-		githubUrl: 'https://github.com/konstantinlindner/lifelytics',
-	},
-	{
-		title: 'PickyEater',
-		description: 'A recipe app for picky eaters',
-		image: '/images/projects/picky-eater.png',
-		shortContent: 'Short content of project 3',
-		longContent: 'Long content of project 3',
-		githubUrl: 'https://github.com/konstantinlindner/picky-eater',
+		title: 'Portfolio',
+		description: 'The very website you are browsing',
+		technology: [
+			'Typescript',
+			'React',
+			'Next.js',
+			'TailwindCSS',
+			'shadcn/ui',
+			'Lucide',
+			'Vercel',
+		],
+		backText: 'A website to show off my completed projects.',
+		githubUrl: 'https://github.com/konstantinlindner/konstantinlindner.com',
+		image: '/images/projects/portfolio.png',
 	},
 ]
 
 export default function Projects() {
 	return (
-		<main className="space-y-10 px-5 pt-10 lg:px-20 2xl:px-40">
+		<main className="space-y-10 px-5 pt-5 lg:px-20 2xl:px-40">
 			<section className="flex flex-col gap-3">
 				<h1 className="text-4xl font-bold">Project showcase</h1>
 
@@ -124,10 +169,10 @@ export default function Projects() {
 							key={index}
 							title={project.title}
 							description={project.description}
-							image={project.image}
-							shortContent={project.shortContent}
-							longContent={project.longContent}
+							technology={project.technology}
+							backText={project.backText}
 							websiteUrl={project.websiteUrl}
+							image={project.image}
 						/>
 					))}
 				</div>
@@ -144,11 +189,11 @@ export default function Projects() {
 							key={index}
 							title={project.title}
 							description={project.description}
-							image={project.image}
-							shortContent={project.shortContent}
-							longContent={project.longContent}
+							technology={project.technology}
+							backText={project.backText}
 							websiteUrl={project.websiteUrl}
 							githubUrl={project.githubUrl}
+							image={project.image}
 						/>
 					))}
 				</div>
