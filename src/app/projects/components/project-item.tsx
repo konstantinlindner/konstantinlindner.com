@@ -6,28 +6,27 @@ import Image from 'next/image'
 
 import { cn } from '@/lib/utils'
 
-import { motion } from 'framer-motion'
-
+import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 
 type ProjectItemProps = {
 	title: string
 	description: string
-	image: string
-	shortContent: string
-	longContent: string
+	technology: string[]
+	backText: string
 	websiteUrl?: string
 	githubUrl?: string
+	image: string
 }
 
 export default function ProjectItem({
 	title,
 	description,
-	image,
-	shortContent,
-	longContent,
+	technology,
+	backText,
 	websiteUrl,
 	githubUrl,
+	image,
 }: ProjectItemProps) {
 	const [isRotated, setIsRotated] = useState<boolean>(false)
 
@@ -39,20 +38,20 @@ export default function ProjectItem({
 		<div className="perspective-1000">
 			<div
 				className={cn(
-					'relative h-96 w-80 rounded-2xl border-2 transition-all duration-500 transform-style-3d',
+					'relative h-[430px] w-80 rounded-2xl border-2 transition-all duration-500 transform-style-3d',
 					isRotated && 'rotate-y-180',
 				)}
 			>
 				{/* front */}
 
 				<div className="absolute inset-0 flex size-full flex-col justify-between p-5 rotate-y-0 backface-hidden">
-					<div className="flex flex-col gap-2">
+					<div className="flex flex-col gap-4">
 						<header className="flex flex-col gap-2">
 							<Image
 								src={image}
 								alt={title}
-								width={400}
-								height={200}
+								width={276}
+								height={155}
 								className="rounded-2xl"
 							/>
 							<div className="-space-y-1">
@@ -60,11 +59,19 @@ export default function ProjectItem({
 								<h3 className="text-sm">{description}</h3>
 							</div>
 						</header>
-						<p>{shortContent}</p>
+
+						<div className="flex flex-wrap gap-1">
+							{technology.map((item, index) => (
+								<Badge key={index} variant="outline">
+									{item}
+								</Badge>
+							))}
+						</div>
+						{/* <p>{shortContent}</p> */}
 					</div>
 
 					<div className="flex justify-between">
-						<Button onClick={handleRotation}>Project info</Button>
+						<Button onClick={handleRotation}>Read more</Button>
 
 						<CardButtons
 							websiteUrl={websiteUrl}
@@ -82,7 +89,7 @@ export default function ProjectItem({
 							<h3 className="text-sm">{description}</h3>
 						</header>
 
-						<p>{longContent}</p>
+						<p>{backText}</p>
 					</div>
 
 					<div className="flex justify-between">
