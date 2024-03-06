@@ -71,7 +71,9 @@ export default function ProjectItem({
 					</div>
 
 					<div className="flex justify-between">
-						<Button onClick={handleRotation}>Read more</Button>
+						<Button variant="outline" onClick={handleRotation}>
+							Read more
+						</Button>
 
 						<CardButtons
 							websiteUrl={websiteUrl}
@@ -93,7 +95,9 @@ export default function ProjectItem({
 					</div>
 
 					<div className="flex justify-between">
-						<Button onClick={handleRotation}>Back</Button>
+						<Button variant="outline" onClick={handleRotation}>
+							Back
+						</Button>
 
 						<CardButtons
 							websiteUrl={websiteUrl}
