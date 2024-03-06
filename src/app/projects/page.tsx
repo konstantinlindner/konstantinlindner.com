@@ -146,8 +146,8 @@ const personalProjects = [
 
 export default function Projects() {
 	return (
-		<main className="space-y-10 px-5 pt-5 lg:px-20 2xl:px-40">
-			<section className="flex flex-col gap-3">
+		<main className="space-y-20 px-5 pt-5 lg:px-20 2xl:px-40">
+			<section className="flex flex-col gap-3 md:px-20 xl:px-32 2xl:px-48">
 				<h1 className="text-4xl font-bold">Project showcase</h1>
 
 				<p>
