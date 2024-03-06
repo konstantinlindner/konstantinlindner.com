@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { useLockBody } from '@/hooks/use-lock-body'
@@ -10,6 +9,7 @@ import { cn } from '@/lib/utils'
 import { Menu, X } from 'lucide-react'
 
 import { NavbarProps } from '@/components/navbar'
+import ThemeToggle from '@/components/theme-toggle'
 import { Button } from '@/components/ui/button'
 
 export default function NavbarMobile({ items, currentPage }: NavbarProps) {
@@ -31,22 +31,20 @@ export default function NavbarMobile({ items, currentPage }: NavbarProps) {
 	}
 
 	return (
-		<header className="relative flex h-24 flex-row items-center justify-between bg-white px-10">
-			<button
-				onClick={handleMenuClick}
-				type="button"
-				className="relative z-10"
-			>
+		<header className="relative flex h-24 items-center justify-between px-10">
+			<button onClick={handleMenuClick} className="relative z-10">
 				{menuOpen ?
-					<X className="size-8 text-primary" strokeWidth={3} />
-				:	<Menu className="size-8 text-primary" strokeWidth={3} />}
+					<X className="size-8" />
+				:	<Menu className="size-8" />}
 			</button>
+
+			<ThemeToggle isMobile />
 
 			{menuOpen && (
 				<>
 					<div className="fixed inset-0 top-72 z-10 bg-secondary opacity-80"></div>
 					<nav className="fixed inset-0 top-24 z-30 grid grid-flow-row auto-rows-max overflow-auto shadow-md animate-in slide-in-from-top-3">
-						<div className="grid justify-center gap-10 bg-white p-20 text-center shadow-md">
+						<div className="grid justify-center gap-10 bg-background px-20 pb-20 pt-5 text-center shadow-md">
 							{items.map((item, index) => (
 								<Link
 									key={index}
@@ -61,7 +59,6 @@ export default function NavbarMobile({ items, currentPage }: NavbarProps) {
 									{item.title}
 								</Link>
 							))}
-							<Button>Logga in</Button>
 						</div>
 					</nav>
 				</>
