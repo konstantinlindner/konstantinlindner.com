@@ -11,11 +11,12 @@ const professionalProjects = [
 		technology: [
 			'Typescript',
 			'React Native',
-			'Emotion/styled',
 			'MobX',
+			'Emotion/styled',
 			'Firebase',
 			'PHP',
 			'Laravel',
+			'Docker',
 			'MySQL',
 		],
 		backText:
@@ -49,6 +50,28 @@ const professionalProjects = [
 		image: '/images/projects/tillse.png',
 	},
 	{
+		title: 'Propinfo',
+		description: 'Offering sales data on strata organisations',
+		technology: [
+			'Go',
+			'Go Fiber',
+			'PostgreSQL',
+			'Typescript',
+			'React',
+			'Vite',
+			'Next.js',
+			'Tanstack Router',
+			'Tanstack Query',
+			'Zod',
+			'TailwindCSS',
+			'shadcn/ui',
+		],
+		backText:
+			'Building the landing, web app as well as backend for propinfo.se. I decided on a backend written in Go, creating an API served by Go Fiber - coupled with a PostgreSQL database hosted on CockroachDB. The landing page was built with Next.js to utilize SSR for SEO and the web app with vanilla React + Vite. The web app uses Tanstack Router for routing and Tanstack Query for data fetching.',
+		websiteUrl: 'https://propinfo.se/',
+		image: '/images/projects/golang.jpeg',
+	},
+	{
 		title: 'AI Projects',
 		description: 'R&D projects in the field of AI',
 		technology: [
@@ -72,9 +95,10 @@ const professionalProjects = [
 	},
 	{
 		title: 'Puppeteer scraper',
-		description: 'Helping a company gather data',
-		technology: ['Typescript', 'Puppeteer', 'Node.js'],
-		backText: 'Custom web scraping script for the real estate industry.',
+		description: 'Helping a company gather public data',
+		technology: ['Typescript', 'Node.js', 'Puppeteer'],
+		backText:
+			'Custom web scraping script for the real estate industry. Collecting contact information from websites.',
 		image: '/images/projects/scraper.png',
 	},
 ]
@@ -91,7 +115,7 @@ const personalProjects = [
 			'TailwindCSS',
 			'shadcn/ui',
 			'Zod',
-			'AWS',
+			'Zustand',
 			'Framer Motion',
 			'Supabase',
 		],
